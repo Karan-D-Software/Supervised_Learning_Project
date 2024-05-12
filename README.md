@@ -18,7 +18,8 @@
     2. [Decision Trees](#decision-trees)
     3. [Random Forests](#random-forests)
     4. [Support Vector Machines](#support-vector-machines)
-5. ℹ️ [References](#references)
+6. 💬 [Discussion & Conclusion](#discussion--conclusion)
+7. ℹ️ [References](#references)
 
 ## 👋🏽 Introduction 
 In this project, we will try to find, analyze, and create an unsupervised machine-learning model to solve a problem. The data we will be using will be the Breast Cancer Wisconsin (Diagnostic) Data Set, this further adds to how supervised models can assist in medical problems. 
@@ -112,8 +113,20 @@ The Support Vector Machine (SVM) achieved an accuracy of `94%`, indicating stron
 
 The grid search for SVM involved optimizing hyperparameters `C,` `gamma,` and `kernel` to enhance model performance. The parameter grid included `C` values of 0.1, 1, and 10 to explore different regularization strengths, impacting the model's generalization ability. `Gamma` values of 1, 0.1, and 0.01 were chosen to examine the influence on the decision boundary's curvature, with lower values leading to smoother boundaries. The `rbf` (Radial Basis Function) kernel was selected for its effectiveness in handling non-linear relationships in the data. Scaling the training and testing data ensures that all features contribute equally to the model, preventing features with larger scales from dominating the learning process. This is crucial for SVM performance due to its reliance on distance calculations.
 
+## 💬 Discussion & Conclusion
+
+![Missing conclusion.png](./conclusion.png "Conclusion")
+
+In this project, we explored the performance of four supervised machine learning models—Logistic Regression, Decision Trees, Random Forests, and Support Vector Machines (SVM)—on the Breast Cancer Wisconsin (Diagnostic) dataset. Each model was evaluated based on its accuracy, precision, recall, and F1 score, with additional visualizations provided through confusion matrices. 
+
+The Logistic Regression model demonstrated robust performance with an accuracy of 94.27%, showing a strong ability to distinguish between benign and malignant tumours, particularly excelling in precision for malignant predictions. The Decision Tree Classifier achieved an accuracy of 89.17%, offering straightforward interpretability but slightly lower recall for malignant cases, indicating a higher rate of false negatives than Logistic Regression. The Random Forest Classifier, with an accuracy of 92%, leveraged ensemble learning to enhance stability and reduce overfitting, demonstrating a balanced performance across precision and recall metrics. The SVM, achieving an accuracy of 94%, effectively handled the non-linear boundaries in the data, benefiting from hyperparameter tuning to optimize its performance.
+
+The grid search for hyperparameter optimization was crucial in refining the Random Forest and SVM models. For Random Forest, parameters such as `n_estimators`, `max_depth`, and `min_samples_split` were tuned to balance model complexity and generalization. Similarly, for SVM, the `C` parameter controlled the regularization strength, `gamma` adjusted the decision boundary's curvature, and the `rbf` kernel was chosen for its effectiveness in managing non-linear separations. Standardizing the data before training the SVM was essential to ensure that all features contributed equally to the model's decision boundary, enhancing the model's accuracy and robustness.
+
+In conclusion, while all models demonstrated commendable performance, the SVM and Logistic Regression models stood out with the highest accuracies and balanced metrics across precision and recall. The decision boundary plots further illustrated the efficacy of SVM and Decision Tree classifiers in separating the two classes, highlighting their decision-making processes. This success paves the way for exciting future work, which could involve exploring additional feature engineering, more extensive hyperparameter tuning, and the application of other advanced models. This project shows the importance of machine learning in many fields, such as medical diagnostics. 
+
 ## ℹ️ References: 
-UCI Machine Learning & Collaborator. (2015). Breast Cancer Wisconsin (Diagnostic) Data Set. Kaggle. Retrieved [2024], from https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
+UCI Machine Learning & Collaborator. (2015). Breast Cancer Wisconsin (Diagnostic) Data Set. Kaggle. Retrieved [May 10,2024], from https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
 
 Wolberg, W., Mangasarian, O., Street, N., & Street, W. (1995). Breast Cancer Wisconsin (Diagnostic) [Data set]. UCI Machine Learning Repository. https://doi.org/10.24432/C5DW2B 
 
