@@ -1,30 +1,32 @@
-# Breast Cancer Diagnosis Classification
+# 🔬Breast Cancer Diagnosis Classification
+
+[🔗 LINK TO PROJECT CODE](project.ipynb)
 
 ##  Table of Contents
-1. [Introduction](#introduction)
-2. [Objective](#objective)
-3. [Problem Analysis: Machine Learning Requirements](#problem-analysis-machine-learning-requirements)
-4. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+1. 👋🏽 [Introduction](#introduction)
+2. 🎯 [Objective](#objective)
+3. 🧐 [Problem Analysis: Machine Learning Requirements](#problem-analysis-machine-learning-requirements)
+4. 🧑🏽‍💻 [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
     1. [About the Data and Initial Data Cleaning](#about-the-data-and-initial-data-cleaning)
     2. [Data Distribution Analysis](#data-distribution-analysis)
     3. [Correlations Analysis](#correlations-analysis)
     4. [Missing Values Analysis](#missing-values-analysis)
     5. [Outlier Analysis](#outlier-analysis)
     6. [Final Data Cleaning](#final-data-cleaning)
-5. [References](#references)
+5. ℹ️ [References](#references)
 
-## Introduction 
+## 👋🏽 Introduction 
 In this project, we will try to find, analyze, and create an unsupervised machine-learning model to solve a problem. The data we will be using will be the Breast Cancer Wisconsin (Diagnostic) Data Set, this further adds to how supervised models can assist in medical problems. 
 
-The data, a comprehensive collection of features for each sample, was meticulously gathered from images of FNA (Fine Needle Aspiration) of breast masses at the University of Wisconsin Hospital, Madison, by Dr. William H. Wolberg. This valuable dataset is publicly available on the reputable UCI Machine Learning Repository and Kaggle [label](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data). Please check the [references](#references) for more information on the dataset.
+The data, a comprehensive collection of features for each sample, was meticulously gathered from images of FNA (Fine Needle Aspiration) of breast masses at the University of Wisconsin Hospital, Madison, by Dr. William H. Wolberg. This valuable dataset is publicly available on the reputable UCI Machine Learning Repository and Kaggle [here](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data). Please check the [references](#references) for more information on the dataset.
 
-## Objective
+## 🎯 Objective
 The goal of this project will be to classify breast cancer diagnoses as benign or malignant using the features given in the dataset. Throughout this project, we will explore Exploratory Data Analysis (EDA), data cleaning, model training and evaluation of the said model to achieve optimal classification performance. 
 
-## Problem Analysis: Machine Learning Requirements
+## 🧐 Problem Analysis: Machine Learning Requirements
 Our objective leads us to believe we must use a binary classification to find what is malignant and benign. For this project, we will create multiple machine-learning models such as logistic regression, decision trees, random forests and support vector machines. 
 
-## Exploratory Data Analysis (EDA)
+## 🧑🏽‍💻 Exploratory Data Analysis (EDA)
 
 ### About the Data and Initial Data Cleaning
 The Breast Cancer Wisconsin (Diagnostic) dataset comprises 569 entries and 33 columns. The dataset features 31 numerical columns detailing measurements such as `radius_mean`, `texture_mean`, and `area_mean`, alongside `diagnosis` (target variable) and an `id` column. Summary statistics reveal that features like `radius_mean` and `area_mean` show significant variability, indicated by their high standard deviations. The dataset contains no missing values, except for `Unnamed: 32`, which has no data and can be disregarded. Most datatypes are of float64, except for id, which is of int64 and may have to be changed to a object variable. Additionally, we must change `diagnosis` to a categorical variable of (1,0) for malignant and benign respectively.
@@ -66,7 +68,7 @@ By identifying and managing these outliers, we can enhance the reliability and i
 ### Final Data Cleaning 
 We have now dropped all our outliers and finally have a clean dataset to work with.
 
-## References: 
+## ℹ️ References: 
 UCI Machine Learning & Collaborator. (2015). Breast Cancer Wisconsin (Diagnostic) Data Set. Kaggle. Retrieved [2024], from https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
 
 Wolberg, W., Mangasarian, O., Street, N., & Street, W. (1995). Breast Cancer Wisconsin (Diagnostic) [Data set]. UCI Machine Learning Repository. https://doi.org/10.24432/C5DW2B 
